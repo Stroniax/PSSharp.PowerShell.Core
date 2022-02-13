@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AwaitableJobError" xml:space="preserve">
+    <value>The awaitable operation failed.</value>
+  </data>
+  <data name="CodeMethodPartialReference" xml:space="preserve">
+    <value>A partial reference to a code method was provided (the referenced type name or referenced method name, but not both). Both values must be defined.</value>
+  </data>
+  <data name="CodeReferenceNotFound" xml:space="preserve">
+    <value>The code reference could not be identified. The referenced type may not be imported into the application domain, or the method may not meet the CodeReference criteria.</value>
+  </data>
+  <data name="DynamicParameterCompleterNotImplemented" xml:space="preserve">
+    <value>The value passed to the ArgumentCompleter is not implemented.</value>
+  </data>
+  <data name="DynamicParameterCompleterNotImplementedInterpolated" xml:space="preserve">
+    <value>The value passed to the ArgumentCompleter of type {0} is not implemented.</value>
+  </data>
+  <data name="EitherTypeValidationNotMatchedInterpolated" xml:space="preserve">
+    <value>The argument does not match any of the valid types for this parameter. The value must be assignable to one of the following types: {0}.</value>
+  </data>
+  <data name="ExpectedTaskAwaitResultInterpolated" xml:space="preserve">
+    <value>Expected to get a result from the task but the result could not be retrieved. Exception when attempting to capture the result of "await task": {0}</value>
+  </data>
+  <data name="GetOrSetRequired" xml:space="preserve">
+    <value>The type data member must have at least one getter or setter.</value>
+  </data>
+  <data name="JobAlreadyStarted" xml:space="preserve">
+    <value>The job has already been started.</value>
+  </data>
+  <data name="JobNotRunning" xml:space="preserve">
+    <value>The job must be running for the attempted operation to be executed.</value>
+  </data>
+  <data name="JobStatusNotResumable" xml:space="preserve">
+    <value>The job cannot be resumed unless it is Suspended.</value>
+  </data>
+  <data name="NoEnumeratedEnumValidation" xml:space="preserve">
+    <value>The provided value may not be a collection or bitwise combination of values.</value>
+  </data>
+  <data name="NotAwaitable" xml:space="preserve">
+    <value>The provided object is not awaitable. The object must contain all required members to be awaitable - extension methods cannot be supported because awaiting the value is executed at runtime instead of compile time. If necessary, create a task-like wrapper for the object that provides the necessary members.</value>
+  </data>
+  <data name="NotImplementedHelpMessage" xml:space="preserve">
+    <value>This error should never occur with a production version of the module. Please report the bug to the module developer.</value>
+  </data>
+  <data name="ParameterSetNotImplemented" xml:space="preserve">
+    <value>The parameter set is not implemented.</value>
+  </data>
+  <data name="ParameterSetNotImplementedInterpolated" xml:space="preserve">
+    <value>The parameter set {0} is not implemented.</value>
+  </data>
+  <data name="PingJobMaximumRetry" xml:space="preserve">
+    <value>The maximum retry attempt count has been reached.</value>
+  </data>
+  <data name="PingJobMaximumRetryInterpolated" xml:space="preserve">
+    <value>The maximum retry attempt count {0} has been reached.</value>
+  </data>
+  <data name="PingJobUnhandledStateForContinuation" xml:space="preserve">
+    <value>The job state was not expected when determining a new job state or continuing the ping activity.</value>
+  </data>
+  <data name="PingJobUnhandledStateForContinuationInterpolated" xml:space="preserve">
+    <value>The job state {0} was not expected when determining a new job state or continuing the ping activity.</value>
+  </data>
+  <data name="PSCodeMethodInvalidSourceInterpolated" xml:space="preserve">
+    <value>The CodeMethod requires a PSObject with a base value of type [{0}].</value>
+  </data>
+  <data name="RequiredShapeError" xml:space="preserve">
+    <value>The input value is missing one or more expected members.</value>
+  </data>
+  <data name="RequiredShapeMethodInterpolated" xml:space="preserve">
+    <value>The method '{0}' with return type [{1}] and parameters {2} is not found.</value>
+  </data>
+  <data name="RequiredShapePropertyInterpolated" xml:space="preserve">
+    <value>The property '{0}' of type [{1}] is not found.</value>
+  </data>
+  <data name="ScriptBlockVariableAssignmentExpected" xml:space="preserve">
+    <value>The script block is expected to have a single variable assignment expression.</value>
+  </data>
+  <data name="TypeDataAggregateLoadException" xml:space="preserve">
+    <value>Failed to load type data for one or more type definitions. See the inner exception(s) for details.</value>
+  </data>
+  <data name="TypeDataDefinedInterpolated" xml:space="preserve">
+    <value>The type data {0} is already defined for type [{1}].</value>
+  </data>
+  <data name="TypeDataDefinitionToTypeDataNotImplementedInterpolated" xml:space="preserve">
+    <value>The conversion to TypeData from type data definition {0} is not implemented.</value>
+  </data>
+  <data name="TypeDataLoadExceptionInterpolated" xml:space="preserve">
+    <value>Failed to load type data for definition {0}. {1}</value>
+  </data>
+  <data name="TypeDataMemberDefinedInterpolated" xml:space="preserve">
+    <value>The type data member {0} is already a defined {1} for type {2}.</value>
+  </data>
+  <data name="TypeFullNameRequired" xml:space="preserve">
+    <value>The type may not have a null FullName value.</value>
+  </data>
+  <data name="TypeNotDerivedFromAst" xml:space="preserve">
+    <value>The type must be derived from [System.Management.Automation.Language.Ast].</value>
+  </data>
+  <data name="TypeNotDiscriminatedUnion" xml:space="preserve">
+    <value>The provided type argument does not represent a discriminated union type.</value>
+  </data>
+  <data name="UnstoppableAwaitJob" xml:space="preserve">
+    <value>Attempted to stop the job but no cancellation action was provided. The job will be stopped, but the awaitable action will continue.</value>
+  </data>
+</root>

@@ -1,0 +1,90 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="PSSharpCore.fs" />
+		<Compile Include="PSCodeMethod.fs" />
+		<Compile Include="ExtendedTypeDataAnalysisExtensions.fs" />
+		<Compile Include="ErrorMessages.fs" />
+		<Compile Include="SpecialVariables.fs" />
+		<Compile Include="TaskLike.fs" />
+		<Compile Include="PSExtensions.fs" />
+		<Compile Include="PSLanguagePrimitives.fs" />
+		<Compile Include="AstExtensions.fs" />
+		<Compile Include="PSInformationalItem.fs" />
+		<Compile Include="Job\JobBase.fs" />
+		<Compile Include="Job\PingJob\PingJob.fs" />
+		<Compile Include="Job\DelegateJob\DelegateJob.fs" />
+		<Compile Include="Job\ObservableJob\ObserverJob.fs" />
+		<Compile Include="Job\FSAsyncJob\JobBuilder.fs" />
+		<Compile Include="Job\FSAsyncJob\FSAsyncJob.fs" />
+		<Compile Include="Completion\ArgumentCompletion.fs" />
+		<Compile Include="Completion\ReflectionCompletion.fs" />
+		<Compile Include="Completion\DefaultCompletionAttribute.fs" />
+		<Compile Include="Completion\CompletionBaseAttribute.fs" />
+		<Compile Include="Completion\AsyncCompletionBaseAttribute.fs" />
+		<Compile Include="Completion\AsyncComputationCompletionBaseAttribute.fs" />
+		<Compile Include="Completion\ArgumentCompleterTypesCompletionAttribute.fs" />
+		<Compile Include="Completion\AssemblyNameCompletionAttribute.fs" />
+		<Compile Include="Completion\AssemblyPathCompletionAttribute.fs" />
+		<Compile Include="Completion\AstStringLiteralCompletionAttribute.fs" />
+		<Compile Include="Completion\CommandCompletionAttribute.fs" />
+		<Compile Include="Completion\ConstantCompletionAttribute.fs" />
+		<Compile Include="Completion\DiscriminatedUnionNameCompletionAttribute.fs" />
+		<Compile Include="Completion\DuplicateParameterCompletionAttribute.fs" />
+		<Compile Include="Completion\EmptyScriptCompletionAttribute.fs" />
+		<Compile Include="Completion\NamespaceCompletionAttribute.fs" />
+		<Compile Include="Completion\NoCompletionAttribute.fs" />
+		<Compile Include="Completion\NumericCompletionAttribute.fs" />
+		<Compile Include="Completion\TypeNameCompletionAttribute.fs" />
+		<Compile Include="Completion\VariableCompletionAttribute.fs" />
+		<Compile Include="Validation\EitherTypeValidationAttribute.fs" />
+		<Compile Include="Validation\NoEnumeratedEnumValidationAttribute.fs" />
+		<Compile Include="Validation\ShapeValidationAttribute.fs" />
+		<Compile Include="Validation\TaskLikeValidationAttribute.fs" />
+		<Compile Include="TypeConversion\TypeConverter\PSTypeConverter.fs" />
+		<Compile Include="TypeConversion\Transformation\TransformationResult.fs" />
+		<Compile Include="TypeConversion\Transformation\FlatteningTransformationAttribute.fs" />
+		<Compile Include="TypeConversion\Transformation\EnumeratedArgumentTransformationAttribute.fs" />
+		<Compile Include="TypeConversion\Transformation\StronglyTypedTransformationAttribute.fs" />
+		<Compile Include="TypeConversion\Transformation\TaskLikeTransformationAttribute.fs" />
+		<Compile Include="TypeConversion\Transformation\FSharpAsyncObjTransformationAttribute.fs" />
+		<Compile Include="TypeConversion\Transformation\AssemblyTransformationAttribute.fs" />
+		<Compile Include="TypeConversion\Transformation\ScriptTransformationAttribute.fs" />
+		<Compile Include="TypeConversion\Transformation\StringToTypeTransformationAttribute.fs" />
+		<Compile Include="TypeConversion\Transformation\Expansion\WildcardExpansionAttribute.fs" />
+		<Compile Include="TypeConversion\Transformation\Expansion\EnumWildcardExpansionAttribute.fs" />
+		<Compile Include="TypeConversion\Transformation\Expansion\ScriptWildcardExpansionAttribute.fs" />
+		<Compile Include="TypeConversion\Transformation\Expansion\ValueSetWildcardExpansionAttribute.fs" />
+		<Compile Include="Commands\Nouns.fs" />
+		<Compile Include="Commands\CopyObjectCommand.fs" />
+		<Compile Include="Commands\ConvertToFSAsyncJobCommand.fs" />
+		<Compile Include="Commands\NewCompletionResultCommand.fs" />
+		<Compile Include="Commands\RegisterTypeExtensionCodeAnalysisCommand.fs" />
+		<Compile Include="Commands\StartFSAsyncJobCommand.fs" />
+		<Compile Include="Commands\StartPingJobCommand.fs" />
+		<Compile Include="Commands\UseDisposableObjectCommand.fs" />
+		<Compile Include="Commands\DynamicParameter\NewDynamicParameterCommand.fs" />
+		<Compile Include="Commands\DynamicParameter\NewDynamicParameterDictionaryCommand.fs" />
+		<Compile Include="Commands\Task\TaskCommand.fs" />
+		<Compile Include="Commands\Task\ConvertToTaskCommand.fs" />
+		<Compile Include="Commands\Task\WaitTaskCommand.fs" />
+		<Compile Include="Commands\Task\ReceiveTaskCommand.fs" />
+		<Compile Include="Commands\Task\ConvertToAwaiterJobCommand.fs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Management.Automation" Version="7.2.1" PrivateAssets="all" />
+		<PackageReference Update="FSharp.Core" Version="6.0.3" PrivateAssets="all" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\PSSharp.PowerShell.Core.Independant\PSSharp.PowerShell.Core.Independant.csproj" />
+		<ProjectReference Include="..\PSSharp.PowerShell.Core.Tasks\PSSharp.PowerShell.Core.Tasks.csproj" />
+	</ItemGroup>
+
+</Project>

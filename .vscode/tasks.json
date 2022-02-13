@@ -1,0 +1,75 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "detail": "Builds the PowerShell module",
+            "command": "pwsh",
+            "args": [
+                "-File",
+                "${workspaceFolder}/build/build.ps1"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            // "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "pester tests",
+            "type": "shell",
+            "detail": "Test PowerShell execution using Pester.",
+            "command": "pwsh",
+            "args": [
+                "-Command",
+                { 
+                    "quoting": "weak",
+                    "value": "Import-Module '${workspaceFolder}/build/PSSharp.PowerShell.Core'; Import-Module Pester -MinimumVersion 5.0; Invoke-Pester -Configuration @{Run=@{Path='${workspaceFolder}/tests/'};Output=@{Verbosity='Detailed'}}"
+                },
+            ],
+            "dependsOn": "build",
+            "group": "test",
+            "problemMatcher": "$pester"
+        },
+        {
+            "label": "xunit tests",
+            "detail": "Test C# execution using XUnit.",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "test",
+                "${workspaceFolder}/src/CSharp/PSSharp.PowerShell.Core.Tests"
+            ],
+            "dependsOn": "build",
+            "group":  "test",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "all tests",
+            "detail": "Runs Pester and XUnit tests",
+            "type": "shell",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "dependsOn": [
+                "build",
+                "xunit tests",
+                "pester tests"
+            ]
+        },
+        {
+            "label": "clean",
+            "detail": "Removes the build output of the module.",
+            "type": "shell",
+            "command": "pwsh",
+            "args": [
+                "-Command",
+                "Remove-Item -Force -Recurse -Path ${workspaceFolder}/build/PSSharp.PowerShell.Core"
+            ]
+        }
+    ]
+}
