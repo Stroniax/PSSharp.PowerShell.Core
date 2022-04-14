@@ -126,6 +126,9 @@
   <data name="CodeReferenceNotFound" xml:space="preserve">
     <value>The code reference could not be identified. The referenced type may not be imported into the application domain, or the method may not meet the CodeReference criteria.</value>
   </data>
+  <data name="ConflictingTypeFilterInterpolated" xml:space="preserve">
+    <value>The type filter '{0}' is invalid because the conflicting type filter '{1}' was also provided.</value>
+  </data>
   <data name="DynamicParameterCompleterNotImplemented" xml:space="preserve">
     <value>The value passed to the ArgumentCompleter is not implemented.</value>
   </data>
@@ -158,6 +161,24 @@
   </data>
   <data name="NotImplementedHelpMessage" xml:space="preserve">
     <value>This error should never occur with a production version of the module. Please report the bug to the module developer.</value>
+  </data>
+  <data name="ObservableCompletedBeforeNext" xml:space="preserve">
+    <value>The observable sequence was completed before an item was produced.</value>
+  </data>
+  <data name="ObserverDataCompleted" xml:space="preserve">
+    <value>The observed data element represents a completed observation with no Next value.</value>
+  </data>
+  <data name="ObserverDataFailed" xml:space="preserve">
+    <value>The observed data element represents a failed observation. See the inner exception for details.</value>
+  </data>
+  <data name="ObserverFinished" xml:space="preserve">
+    <value>The observable sequence has already been terminated by completion or error.</value>
+  </data>
+  <data name="ObserverNoDelegate" xml:space="preserve">
+    <value>Attempted to create an observer with no delegates for continuation. At least one delegate must be passed to the subscription of the observable.</value>
+  </data>
+  <data name="ObserverNotFinished" xml:space="preserve">
+    <value>The observer has not yet finished processing data from the source.</value>
   </data>
   <data name="ParameterSetNotImplemented" xml:space="preserve">
     <value>The parameter set is not implemented.</value>

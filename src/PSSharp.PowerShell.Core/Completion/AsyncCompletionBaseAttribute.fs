@@ -40,7 +40,7 @@ type AsyncCompletionBaseAttribute () =
             let values = new List<CompletionResult>()
             let rec tryGetNext () =
                 try
-                    match enumerator.MoveNextAsync() |> Async.AwaitValueTask |> Async.RunSynchronously with
+                    match enumerator.MoveNextAsync() |> Async.AwaitTaskLike |> Async.RunSynchronously with
                     | true ->
                         values.Add enumerator.Current
                         tryGetNext ()
@@ -50,6 +50,6 @@ type AsyncCompletionBaseAttribute () =
                 tryGetNext()
                 values
             finally
-                enumerator.DisposeAsync() |> Async.AwaitValueTask |> Async.RunSynchronously
+                enumerator.DisposeAsync() |> Async.AwaitTaskLike |> Async.RunSynchronously
         finally
             Console.CancelKeyPress.RemoveHandler handler

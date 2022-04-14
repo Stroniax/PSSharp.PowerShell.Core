@@ -3,6 +3,8 @@ open System
 open System.Collections.Generic
 open System.Management.Automation
 
+/// Use a script to transform parameter input to the desired type.
+/// The script is provided the $PSItem ($_), $inputData, and $input variables as the parameter argument.
 type ScriptTransformationAttribute (script : ScriptBlock) =
     inherit ArgumentTransformationAttribute ()
     

@@ -7,6 +7,7 @@
 
 	<ItemGroup>
 		<Compile Include="PSSharpCore.fs" />
+		<Compile Include="NullableReference.fs" />
 		<Compile Include="PSCodeMethod.fs" />
 		<Compile Include="ExtendedTypeDataAnalysisExtensions.fs" />
 		<Compile Include="ErrorMessages.fs" />
@@ -16,6 +17,8 @@
 		<Compile Include="PSLanguagePrimitives.fs" />
 		<Compile Include="AstExtensions.fs" />
 		<Compile Include="PSInformationalItem.fs" />
+		<Compile Include="FunctionalEnumeration.fs" />
+		<!--<Compile Include="Reactive.fs" />-->
 		<Compile Include="Job\JobBase.fs" />
 		<Compile Include="Job\PingJob\PingJob.fs" />
 		<Compile Include="Job\DelegateJob\DelegateJob.fs" />
@@ -32,14 +35,18 @@
 		<Compile Include="Completion\AssemblyNameCompletionAttribute.fs" />
 		<Compile Include="Completion\AssemblyPathCompletionAttribute.fs" />
 		<Compile Include="Completion\AstStringLiteralCompletionAttribute.fs" />
+		<Compile Include="Completion\AttributeTypesCompletionAttribute.fs" />
 		<Compile Include="Completion\CommandCompletionAttribute.fs" />
 		<Compile Include="Completion\ConstantCompletionAttribute.fs" />
 		<Compile Include="Completion\DiscriminatedUnionNameCompletionAttribute.fs" />
 		<Compile Include="Completion\DuplicateParameterCompletionAttribute.fs" />
+		<Compile Include="Completion\InterfaceNameCompletionAttribute.fs" />
 		<Compile Include="Completion\EmptyScriptCompletionAttribute.fs" />
+		<Compile Include="Completion\MemberNameCompletionAttribute.fs" />
 		<Compile Include="Completion\NamespaceCompletionAttribute.fs" />
 		<Compile Include="Completion\NoCompletionAttribute.fs" />
 		<Compile Include="Completion\NumericCompletionAttribute.fs" />
+		<Compile Include="Completion\CommandParameterCompletionAttribute.fs" />
 		<Compile Include="Completion\TypeNameCompletionAttribute.fs" />
 		<Compile Include="Completion\VariableCompletionAttribute.fs" />
 		<Compile Include="Validation\EitherTypeValidationAttribute.fs" />
@@ -54,8 +61,10 @@
 		<Compile Include="TypeConversion\Transformation\TaskLikeTransformationAttribute.fs" />
 		<Compile Include="TypeConversion\Transformation\FSharpAsyncObjTransformationAttribute.fs" />
 		<Compile Include="TypeConversion\Transformation\AssemblyTransformationAttribute.fs" />
+		<Compile Include="TypeConversion\Transformation\ObjectToTypeTransformationAttribute.fs" />
 		<Compile Include="TypeConversion\Transformation\ScriptTransformationAttribute.fs" />
 		<Compile Include="TypeConversion\Transformation\StringToTypeTransformationAttribute.fs" />
+		<Compile Include="TypeConversion\Transformation\TrimTypeBracketTransformationAttribute.fs" />
 		<Compile Include="TypeConversion\Transformation\Expansion\WildcardExpansionAttribute.fs" />
 		<Compile Include="TypeConversion\Transformation\Expansion\EnumWildcardExpansionAttribute.fs" />
 		<Compile Include="TypeConversion\Transformation\Expansion\ScriptWildcardExpansionAttribute.fs" />
@@ -70,6 +79,10 @@
 		<Compile Include="Commands\UseDisposableObjectCommand.fs" />
 		<Compile Include="Commands\DynamicParameter\NewDynamicParameterCommand.fs" />
 		<Compile Include="Commands\DynamicParameter\NewDynamicParameterDictionaryCommand.fs" />
+		<Compile Include="Commands\Reflection\GetAttributeCommand.fs" />
+		<Compile Include="Commands\Reflection\GetTypeCommand.fs" />
+		<Compile Include="Commands\Reflection\PSReflection\AddTypeNameCommand.fs" />
+		<Compile Include="Commands\Reflection\PSReflection\GetTypeNameCommand.fs" />
 		<Compile Include="Commands\Task\TaskCommand.fs" />
 		<Compile Include="Commands\Task\ConvertToTaskCommand.fs" />
 		<Compile Include="Commands\Task\WaitTaskCommand.fs" />

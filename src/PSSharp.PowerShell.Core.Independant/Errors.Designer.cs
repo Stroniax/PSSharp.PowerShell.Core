@@ -88,6 +88,15 @@ namespace PSSharp {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The type filter &apos;{0}&apos; is invalid because the conflicting type filter &apos;{1}&apos; was also provided..
+        /// </summary>
+        internal static string ConflictingTypeFilterInterpolated {
+            get {
+                return ResourceManager.GetString("ConflictingTypeFilterInterpolated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The value passed to the ArgumentCompleter is not implemented..
         /// </summary>
         internal static string DynamicParameterCompleterNotImplemented {
@@ -183,6 +192,60 @@ namespace PSSharp {
         internal static string NotImplementedHelpMessage {
             get {
                 return ResourceManager.GetString("NotImplementedHelpMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The observable sequence was completed before an item was produced..
+        /// </summary>
+        internal static string ObservableCompletedBeforeNext {
+            get {
+                return ResourceManager.GetString("ObservableCompletedBeforeNext", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The observed data element represents a completed observation with no Next value..
+        /// </summary>
+        internal static string ObserverDataCompleted {
+            get {
+                return ResourceManager.GetString("ObserverDataCompleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The observed data element represents a failed observation. See the inner exception for details..
+        /// </summary>
+        internal static string ObserverDataFailed {
+            get {
+                return ResourceManager.GetString("ObserverDataFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The observable sequence has already been terminated by completion or error..
+        /// </summary>
+        internal static string ObserverFinished {
+            get {
+                return ResourceManager.GetString("ObserverFinished", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attempted to create an observer with no delegates for continuation. At least one delegate must be passed to the subscription of the observable..
+        /// </summary>
+        internal static string ObserverNoDelegate {
+            get {
+                return ResourceManager.GetString("ObserverNoDelegate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The observer has not yet finished processing data from the source..
+        /// </summary>
+        internal static string ObserverNotFinished {
+            get {
+                return ResourceManager.GetString("ObserverNotFinished", resourceCulture);
             }
         }
         

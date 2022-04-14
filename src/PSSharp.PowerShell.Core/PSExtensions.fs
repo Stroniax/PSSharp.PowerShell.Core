@@ -71,6 +71,8 @@ module PSExtensions =
                 value
         member this.WriteDebug value =
             sprintf value |> this.WriteDebug
+        member this.WriteObjectEnumerated v =
+            this.WriteObject(v, true)
 
     type JobState with
         member this.IsFinished =
